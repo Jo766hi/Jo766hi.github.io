@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title></title>
+  <!-- Import Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1.4/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+</head>
+<body class="bg-gray-900">
+  <div class="container mx-auto px-4 py-8">
+    <h1 class="text-white text-3xl mb-4">Jonathan Silalahi Tugas 2</h1>
+    <form class="bg-gray-800 rounded-lg p-8">
+        <div class="mb-4">
+            <label class="block text-gray-500 font-bold mb-2" for="username">
+              Username
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-800 leading-tight focus:outline-none focus:shadow-outline" id="username" name="username" type="text" placeholder="Enter your username">
+            <p class="text-red-500 text-xs italic mt-2 hidden" id="username-error">Username harus terdiri dari 3-16 huruf, angka, garis bawah, atau tanda hubung</p>
+          </div>
+        <div class="mb-4">
+            <label class="block text-gray-500 font-bold mb-2" for="password">
+                Password
+            </label>
+            <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="password" name="password" type="password" placeholder="Enter your password">
+            <p class="text-red-500 text-xs italic mt-2 hidden" id="password-error">Password harus terdiri dari setidaknya 8 karakter, termasuk setidaknya satu huruf besar, satu huruf kecil, dan satu angka</p>
+        </div>
+      <div class="mb-4">
+        <label class="block text-gray-500 font-bold mb-2" for="email">
+          Email
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="email" type="email" placeholder="Enter your email">
+        <p class="text-red-500 text-xs italic mt-2 hidden" id="email-error">Email tidak valid</p>
+    </div>
+    <div class="mb-4">
+        <label class="block text-gray-500 font-bold mb-2" for="phone">
+          Phone
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="phone" type="phone" placeholder="Enter your phone number">
+        <p class="text-red-500 text-xs italic mt-2 hidden" id="phone-error">Phone number is invalid</p>
+      </div>
+      <div class="mb-4">
+        <label class="block text-gray-500 font-bold mb-2" for="address">
+            Address
+        </label>
+        <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="address" type="address" placeholder="Enter your address">
+        <p class="text-red-500 text-xs italic mt-2 hidden" id="address-error">Alamat tidak valid</p>
+    </div>
+      <div class="flex items-center justify-between">
+        <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">
+          Sign In
+        </button>
+        <a class="inline-block align-baseline font-bold text-sm text-blue-500 hover:text-blue-800" href="#">
+          Forgot Password?
+        </a>
+      </div>
+    </form>
+  </div>
+</body>
+
+<script type="text/javascript" src="script.js"></script>
+
+</html>
